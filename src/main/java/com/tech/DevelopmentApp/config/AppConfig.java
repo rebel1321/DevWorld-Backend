@@ -37,7 +37,7 @@ public class AppConfig {
     public CorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration configuration = new CorsConfiguration();
         configuration.setAllowedOrigins(Arrays.asList(
-                "http://localhost:5174",
+                "http://localhost:5173",
                 "https://self-project-azure.vercel.app"
         ));
         configuration.setAllowedMethods(Collections.singletonList("*"));
