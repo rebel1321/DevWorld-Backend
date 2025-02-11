@@ -98,6 +98,7 @@ public class AuthController {
         authResponse.setMessage("Signin Success");
         return new ResponseEntity<AuthResponse>(authResponse, HttpStatus.CREATED);
     }
+
     private Authentication authenticate(String userName,String password){
         UserDetails userDetails= customUserServiceImplementation.loadUserByUsername(userName);
 
